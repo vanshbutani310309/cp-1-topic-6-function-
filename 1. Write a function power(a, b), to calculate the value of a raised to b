@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+long long power(int a, int b) {
+    long long result = 1;
+    for (int i = 0; i < b; i++) {
+        result *= a;
+    }
+    return result;
+}
+
+int main() {
+    int a, b;
+    printf("Enter base (a) and exponent (b): ");
+    scanf("%d %d", &a, &b);
+    printf("%d raised to %d = %lld\n", a, b, power(a, b));
+    return 0;
+}
